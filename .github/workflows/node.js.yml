@@ -178,6 +178,14 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} turbo build
+
+      - name: Verify build output
+        run: |
+          echo "Contents of apps/docs:"
+          ls -la apps/docs
+          echo "Contents of apps/docs/out:"
+          ls -la apps/docs/out
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
