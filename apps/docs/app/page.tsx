@@ -1,6 +1,10 @@
-import Image from "next/image";
 import { Button } from "@repo/ui/button";
+import Image from "next/image";
 import styles from "./page.module.css";
+
+import FileTextLogo from "./assets/file-text.svg";
+import NextLogo from "./assets/next.svg";
+import VerCelLogo from "./assets/vercel.svg";
 
 export default function Home() {
   return (
@@ -8,7 +12,7 @@ export default function Home() {
       <main className={styles.main}>
         <Image
           className={styles.logo}
-          src="/next.svg"
+          src={NextLogo}
           alt="Next.js logo"
           width={180}
           height={38}
@@ -30,7 +34,7 @@ export default function Home() {
           >
             <Image
               className={styles.logo}
-              src="/vercel.svg"
+              src={VerCelLogo}
               alt="Vercel logomark"
               width={20}
               height={20}
@@ -61,7 +65,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/file-text.svg"
+            src={FileTextLogo}
             alt="File icon"
             width={16}
             height={16}
