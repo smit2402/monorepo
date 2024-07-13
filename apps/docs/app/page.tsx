@@ -3,8 +3,10 @@ import Image from "next/image";
 import styles from "./page.module.css";
 
 import FileTextLogo from "./assets/file-text.svg";
+import GlobeImage from "./assets/globe.svg";
 import NextLogo from "./assets/next.svg";
 import VerCelLogo from "./assets/vercel.svg";
+import WindowImageLogo from "./assets/window.svg";
 
 export default function Home() {
   return (
@@ -79,7 +81,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/window.svg"
+            src={WindowImageLogo}
             alt="Window icon"
             width={16}
             height={16}
@@ -93,7 +95,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/globe.svg"
+            src={GlobeImage}
             alt="Globe icon"
             width={16}
             height={16}
