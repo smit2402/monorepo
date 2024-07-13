@@ -85,8 +85,8 @@ jobs:
       - name: Deploy with gh-pages
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          npm run deploy -d apps/docs/out -t true -- -u "github-actions-bot <support+actions@github.com>"
-          npm run deploy -d apps/web/out -t true -- -u "github-actions-bot <support+actions@github.com>"
+          npm run deploy-docs -- -u "github-actions-bot <support+actions@github.com>"
+          npm run deploy-web -- -u "github-actions-bot <support+actions@github.com>"
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
 

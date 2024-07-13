@@ -7,7 +7,8 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "deploy": "gh-pages"
+    "deploy-docs": "gh-pages -d apps/docs/out  -t true",
+    "deploy-web": "gh-pages -d apps/web/out  -t true"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
