@@ -2,11 +2,8 @@
 const nextConfig = {
   output: "export",
 
-  basePath: "/monorepo",
-  assetPrefix: "/monorepo/",
-  publicRuntimeConfig: {
-    basePath: "/monorepo",
-  },
+  basePath: "/monorepo/docs",
+  assetPrefix: "/monorepo/docs/",
 };
 
 export default nextConfig;
