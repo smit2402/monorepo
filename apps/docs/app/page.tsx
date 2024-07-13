@@ -79,7 +79,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/docs/window.svg"
+            src="/window.svg"
             alt="Window icon"
             width={16}
             height={16}
@@ -93,7 +93,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/docs/globe.svg"
+            src="/globe.svg"
             alt="Globe icon"
             width={16}
             height={16}
